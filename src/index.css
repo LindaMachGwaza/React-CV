@@ -1,13 +1,228 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*Google fonts link*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+body{
+  background-color: rgba(232, 222, 236, 0.26);
+}
+/*Removed default color on link*/
+a{
+  text-decoration: none;
+  color: rgba(78, 46, 49, 0.829);
+  
+}
+/*Added hover effect and removed underline when hovered*/
+a:hover{
+  text-decoration: none;
+  color: rgb(110, 48, 67);
+}
+.container{
+  padding-top: 50px;
+}
+.row{
+  height: 90vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Main content section customised*/
+.app_main-content{
+  background-color: whitesmoke;
+  padding: 25px 15px;
+  box-shadow: 0 0 10px rgba(128, 0, 11, 0.432);
+  margin-bottom: -1px;
 }
+/*Sidebar section*/
+.app_sidebar{
+  background-color: whitesmoke;
+  height: 100%;
+  padding: 25px 15px;
+  box-shadow: 0 0 10px rgba(128, 0, 11, 0.432);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sidebar_image{
+  border-radius: 50px;
+  
+}
+.sidebar-icon{
+  width: 25px;
+  height: 25px;
+}
+/*Name customised*/
+.name{
+  font-family: 'Poppins';
+  font-size: 28px;
+  font-weight: 500;
+  color: rgba(29, 52, 70, 0.74);
+  margin: 20px 0;
+  text-transform: uppercase;
+  
+}
+/*Title or role*/
+.sidebar .title{
+  font-family: 'Lucida Sans';
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: rgba(207, 35, 35, 0.219);
+  color: rgba(83, 59, 59, 0.582);
+}
+/*Title or role level*/
+.sidebar .level{
+  font-size: 15px;
+  color: rgba(224, 88, 151, 0.562);
+  
+}
+.sidebar-item{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 40px;
+  font-size: 1.05rem;
+}
+.sidebar-dwn{
+  border-radius: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+ .social-icons span{
+  color:rgba(70, 42, 70, 0.363) ;
+}
+/*contact section customised*/
+.contact{
+  background-color: rgba(170, 50, 60, 0.144);
+  padding: 2px 0;
+  font-family: 'Lucida Sans';
+  color: rgba(61, 56, 56, 0.582);
+  border-radius: 30px;
+}
+
+/*ABOUT*/
+.about_title{
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 'Poppins';
+  color: rgb(151, 109, 109);
+  
+}
+.heading{
+  margin: 30px 15px ;
+}
+.about_icon{
+  color: rgb(104, 75, 75);
+}
+.about_intro{
+  font-weight: normal;
+  font-size: 17px;
+  color: grey;
+}
+/*WORK EXPERIENCE*/
+.work-heading{
+  margin: 40px 15px ;
+}
+.work-group {
+  position: relative;
+}
+.work-group h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(104, 75, 75);
+}
+/*The h4 heading for work periods moved to the left so that it aligns with the rest of the page contents, font size adjusted*/
+.work-group h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(90, 90, 97);
+}
+/*Work period customized*/
+.work-group span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-weight: bold;
+  font-size: 15px;
+  color: gray;
+}
+.work-group p{
+  color: grey;
+  font-weight: 400;
+}
+/*SKILLS*/
+.bars {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  padding: 0 20px;
+}
+.bars .bar p {
+  font-size: 15px;
+  font-weight: bold;
+  color: grey;
+}
+.bar span {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: lightgray;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+/*Skills bars customised so that they can show scale or level of skills*/
+.bar span::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 80%;
+  background-color: rgba(33, 33, 61, 0.534);
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+.other span {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: lightgray;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+/*Other skills Bars customised so that they can show scale or level of skills*/
+.other span::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-color: rgba(33, 33, 61, 0.534);
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+/*Other skills bars*/
+.other {
+  padding: 0 20px;
+}
+.other p{
+  color: grey;
+}
+
+.other_skills h4 {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 545;
+  color: rgb(104, 75, 75);
+}
+.edu-group h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(104, 75, 75);
+}
+/*Education period customised*/
+.edu-group span {
+  top: 10px;
+  right: 0;
+  font-size: 15px;
+  font-weight: 450;
+  color: grey;
+}
+/*Sources used include Hyperiondev notes, Stackoverflow, React Bootstrap, You Tube, GeeksforGeeks, previous tasks and React fontawesome*/
